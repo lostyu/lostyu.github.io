@@ -1,0 +1,209 @@
+/* var */
+@c1: #1c1d21;
+@c2: #31353d;
+@c3: #445878;
+@c4: #92cdcf;
+@c5: #eeeff7;
+@fz-big: 22px;
+@fz-middle: 18px;
+@fz-small: 16px;
+@fz-xsmall: 14px;
+
+/* reset */
+html, body, h1, h2, ul, p {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: @c5;
+  font: @fz-xsmall/1.5 "Hiragino Sans GB", "Microsoft YaHei", "微软雅黑", tahoma, arial, simhei, "黑体";
+}
+
+h1 {
+  font-size: @fz-big;
+}
+
+h2 {
+  font-size: @fz-middle;
+  margin-bottom: 15px;
+}
+
+p {
+  margin-bottom: 10px;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  color: @c1;
+  text-decoration: none;
+}
+
+a:hover {
+  color: @c4;
+  text-decoration: underline;
+}
+
+/* function */
+.f-clearfix {
+  zoom: 1;
+}
+
+.f-clearfix:after {
+  content: '.';
+  display: block;
+  clear: both;
+  height: 0;
+  visibility: hidden;
+  overflow: hidden;
+}
+
+.f-tar{
+  text-align: right;
+}
+
+/* color */
+.c-1{color: @c1;}
+.c-2{color: @c2;}
+.c-3{color: @c3;}
+.c-4{color: @c4;}
+.c-5{color: @c5;}
+
+/* grid */
+.g-hd {
+}
+
+.g-bd {
+  padding: 30px 0;
+  min-height: 800px;
+}
+
+.g-ft {
+}
+
+.g-main {
+  width: 670px;
+  float: left;
+}
+
+.g-side {
+  width: 310px;
+  float: right;
+}
+
+.g-container {
+  width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* module */
+.m-doc * {
+  transition: .5s;
+}
+
+.m-hd {
+  padding: 10px 0;
+  background-color: @c2;
+  color: @c5;
+  font-size: @fz-small;
+}
+
+.m-hd h1 {
+  float: left;
+  line-height: 40px;
+  padding-right: 50px;
+
+  a {
+    color: @c5;
+  }
+}
+
+.m-hd ul {
+  float: left;
+}
+
+.m-hd ul li {
+  float: left;
+}
+
+.m-hd ul a {
+  display: block;
+  line-height: 40px;
+  padding: 0 20px;
+  color: @c5;
+
+  &:hover {
+    color: @c4;
+  }
+}
+
+.m-ft {
+  padding: 100px 0;
+  background-color: @c1;
+  color: @c5;
+  text-align: center;
+}
+
+.m-articleList {
+  margin-top: -20px;
+  .title {
+    overflow: hidden;
+    h2 {
+      float: left;
+    }
+    .date {
+      float: right;
+      color: @c2;
+      font-size: @fz-xsmall;
+    }
+  }
+  li {
+    padding: 20px;
+    margin-top: 20px;
+    background-color: #fff;
+    box-shadow: 1px 1px 2px @c1;
+    &:hover{
+      box-shadow: 1px 1px 8px @c1;
+    }
+  }
+  p{
+    margin-bottom: 5px;
+  }
+  p:last-child{
+    margin-bottom:0;
+  }
+}
+
+.m-player{
+  margin-top:-10px;
+  margin-bottom: 5px;
+  .iframe{
+    margin-left:-10px;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
